@@ -1,0 +1,25 @@
+{
+  "name": "getting-started-with-react",
+  "version": "1.0.0",
+  "description": "**Instructor: David East**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syneewong/getting-started-with-react.git"
+  },
+  "author": "Syn-Ee Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syneewong/getting-started-with-react/issues"
+  },
+  "homepage": "https://github.com/syneewong/getting-started-with-react#readme",
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0"
+  }
+}
