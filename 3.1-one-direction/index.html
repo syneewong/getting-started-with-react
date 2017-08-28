@@ -27,6 +27,8 @@
     },
 
     handleDelete: function(item) {
+      console.log('deleting');
+      // This uses lo-dash https://lodash.com/. Utility library that gives us useful methods.
       var newMessages = _.without(this.state.messages, item);
       this.setState({
         messages: newMessages
@@ -52,6 +54,7 @@
         display: this.state.isVisible ? 'block' : 'none'
       };
 
+      // Bind this to get the context of this as the component
       var messages = this.state.messages.map(function(message) {
         return <SubMessage message={message} onDelete={this.handleDelete} />;
       }.bind(this));
@@ -70,6 +73,7 @@
   var SubMessage = React.createClass({
 
     handleDelete: function (e) {
+      console.log(this.props);
       this.props.onDelete(this.props.message);
     },
 

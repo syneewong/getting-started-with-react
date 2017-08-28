@@ -18,12 +18,13 @@
   var MessageBox = React.createClass({
 
     handleAdd: function(e) {
-      console.log(this);
+      // console.log(this);
       var newMessage = this.refs.newMessage.getDOMNode().value;
       var newMessages = this.state.messages.concat([newMessage]);
       this.setState({
         messages: newMessages
       });
+      this.refs.newMessage;
     },
 
     getInitialState: function() {
